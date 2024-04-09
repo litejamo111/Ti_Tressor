@@ -1,0 +1,43 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre: MyString
+  usuario: MyString
+  correo: MyString
+  bitrix24: MyString
+  equipo: MyString
+  tipo: MyString
+  ubicacion: MyString
+  procesador: MyString
+  grafica: MyString
+  memoria: MyString
+  disco: MyString
+  monitor: MyString
+  mouse: MyString
+  teclado: MyString
+  diadema: MyString
+  base_refrigerante: MyString
+  celular: MyString
+  otro_accesorio: MyString
+  observaciones: MyString
+
+two:
+  nombre: MyString
+  usuario: MyString
+  correo: MyString
+  bitrix24: MyString
+  equipo: MyString
+  tipo: MyString
+  ubicacion: MyString
+  procesador: MyString
+  grafica: MyString
+  memoria: MyString
+  disco: MyString
+  monitor: MyString
+  mouse: MyString
+  teclado: MyString
+  diadema: MyString
+  base_refrigerante: MyString
+  celular: MyString
+  otro_accesorio: MyString
+  observaciones: MyString

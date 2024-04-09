@@ -1,0 +1,2 @@
+class Gblab < ApplicationRecord
+end

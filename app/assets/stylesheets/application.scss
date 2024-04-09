@@ -1,0 +1,42 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ /* Custom CSS styles */
+.btn-pagination {
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+}
+
+/* Style for left arrow */
+.btn-pagination.left::before {
+  content: '\2039'; /* Unicode for left arrow symbol */
+}
+
+/* Style for right arrow */
+.btn-pagination.right::before {
+  content: '\203A'; /* Unicode for right arrow symbol */
+}
+
+/* Style for plus icon */
+.btn-plus::before {
+  content: '\002B'; /* Unicode for plus symbol */
+}
+
+.modal-backdrop {
+  background-color: rgba(0, 0, 0, 0); /* Transparent backdrop */
+}
+
+

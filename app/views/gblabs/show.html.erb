@@ -1,0 +1,123 @@
+<p style="color: green"><%= notice %></p>
+<h1 class="py-2">Item</h1>
+<div class="p-5 mt-5 mb-4 bg-secondary-subtle rounded-3">
+  <%= form_with(model: @gblab) do |form|%>
+    <% if @gblab.errors.any? %>
+      <div style="color: red">
+        <h2><%= pluralize(@gblab.errors.count, "error") %> prohibited this gblab from being saved:</h2>
+
+        <ul>
+          <% @gblab.errors.each do |error| %>
+            <li><%= error.full_message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+    <div class="row g-3 ">
+
+      <div class="col-md-6">
+        <%= form.label :nombre, class:"form-label"%>
+        <%= form.text_field :nombre, class:"form-control", readonly: true %>
+      </div>
+
+      <div class="col-md-6">
+        <%= form.label :usuario, class:"form-label" %>
+        <%= form.text_field :usuario, class:"form-control", readonly: true  %>
+      </div>
+
+      <div class="col-md-6">
+        <%= form.label :correo, style: "display: block", class:"form-label" %>
+        <%= form.text_field :correo, class:"form-control", readonly: true   %>
+      </div>
+
+      <div class="col-md-2">
+        <%= form.label :bitrix24, style: "display: block", class:"form-label" %>  
+        <%= form.text_field :bitrix24, class:"form-control", readonly: true   %>
+      </div>
+
+      <div class="col-md-4">
+        <%= form.label :equipo, style: "display: block", class:"form-label" %>
+        <%= form.text_field :equipo, class:"form-control", readonly: true   %>
+      </div>
+
+      <div class="col-md-6">
+        <%= form.label :tipo, style: "display: block", class:"form-label" %>
+        <%= form.text_field :tipo, class:"form-control", readonly: true   %>
+      </div>
+
+      <div class="col-md-6">
+        <%= form.label :ubicacion, style: "display: block", class:"form-label" %>
+        <%= form.text_field :ubicacion, class:"form-control", readonly: true   %>
+      </div>
+
+      <div class="col-md-6">
+        <%= form.label :procesador, style: "display: block", class:"form-label" %>
+        <%= form.text_field :procesador, class:"form-control", readonly: true   %>
+      </div>
+
+      <div class="col-md-6">
+        <%= form.label :grafica, style: "display: block", class:"form-label" %>
+        <%= form.text_field :grafica, class:"form-control", readonly: true   %>
+      </div>
+
+      <div class="col-md-4">
+        <%= form.label :memoria, style: "display: block", class:"form-label" %>
+        <%= form.text_field :memoria, class:"form-control", readonly: true   %>
+      </div>
+
+      <div class="col-md-8">
+        <%= form.label :disco, style: "display: block", class:"form-label" %>
+        <%= form.text_field :disco, class:"form-control", readonly: true   %>
+      </div>
+
+      <div class="col-md-2">
+        <%= form.label :monitor, style: "display: block", class:"form-label" %>
+        <%= form.text_field :monitor, class:"form-control", readonly: true   %>
+      </div>
+
+      <div class="col-md-2">
+        <%= form.label :mouse, style: "display: block", class:"form-label" %>
+        <%= form.text_field :mouse, class:"form-control", readonly: true   %>
+      </div>
+
+      <div class="col-md-2">
+        <%= form.label :teclado, style: "display: block", class:"form-label" %>
+        <%= form.text_field :teclado, class:"form-control", readonly: true   %>
+      </div>
+
+      <div class="col-md-2">
+        <%= form.label :diadema, style: "display: block", class:"form-label" %>
+        <%= form.text_field :diadema, class:"form-control", readonly: true   %>
+      </div>
+
+      <div class="col-md-2">
+        <%= form.label :base_refrigerante, style: "display: block", class:"form-label" %>
+        <%= form.text_field :base_refrigerante, class:"form-control", readonly: true   %>
+      </div>
+
+      <div class="col-md-2">
+        <%= form.label :celular, style: "display: block", class:"form-label" %>
+        <%= form.text_field :celular, class:"form-control", readonly: true   %>
+      </div>
+
+      <div class="col-md-6">
+        <%= form.label :otro_accesorio, style: "display: block", class:"form-label" %>
+        <%= form.text_field :otro_accesorio, class:"form-control", readonly: true   %>
+      </div>
+
+      <div class="col-md-6">
+        <%= form.label :observaciones, style: "display: block", class:"form-label" %>
+        <%= form.text_field :observaciones, class:"form-control", readonly: true   %>
+      </div>
+
+    </div>
+  <% end %>
+  </div>
+  <%= render "home/destroyconf" %>
+<div class="py-4">
+  <%= link_to "Edit this gblab", edit_gblab_path(@gblab), class:"btn btn-primary px-2" %> 
+  <%= link_to "Back to gblabs", gblabs_path, class: "btn btn-secondary px-2 mx-2"%>
+  <button type="button" class="btn btn-danger my-4" data-bs-toggle="modal" data-bs-target="#destroyConfirmationModal" >
+    Destroy this gblab
+  </button>
+</div>
