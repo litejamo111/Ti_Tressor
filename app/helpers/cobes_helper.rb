@@ -1,0 +1,2 @@
+module CobesHelper
+end

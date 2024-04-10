@@ -1,0 +1,2 @@
+class Cobe < ApplicationRecord
+end

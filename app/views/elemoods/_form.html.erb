@@ -1,10 +1,10 @@
-<%= form_with(model: gblab) do |form|%>
-  <% if gblab.errors.any? %>
+<%= form_with(model: elemood) do |form|%>
+  <% if elemood.errors.any? %>
     <div style="color: red">
-      <h2><%= pluralize(gblab.errors.count, "error") %> prohibited this gblab from being saved:</h2>
+      <h2><%= pluralize(elemood.errors.count, "error") %> prohibited this elemood from being saved:</h2>
 
       <ul>
-        <% gblab.errors.each do |error| %>
+        <% elemood.errors.each do |error| %>
           <li><%= error.full_message %></li>
         <% end %>
       </ul>

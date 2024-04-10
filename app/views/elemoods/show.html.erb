@@ -1,12 +1,12 @@
-<h1 class="py-2">Item Gblab</h1>
+<h1 class="py-2">Item elemood</h1>
 <div class="p-5 mt-5 mb-4 bg-secondary-subtle rounded-3">
-  <%= form_with(model: @gblab) do |form|%>
-    <% if @gblab.errors.any? %>
+  <%= form_with(model: @elemood) do |form|%>
+    <% if @elemood.errors.any? %>
       <div style="color: red">
-        <h2><%= pluralize(@gblab.errors.count, "error") %> prohibited this gblab from being saved:</h2>
+        <h2><%= pluralize(@elemood.errors.count, "error") %> prohibited this elemood from being saved:</h2>
 
         <ul>
-          <% @gblab.errors.each do |error| %>
+          <% @elemood.errors.each do |error| %>
             <li><%= error.full_message %></li>
           <% end %>
         </ul>
@@ -114,9 +114,9 @@
   </div>
   <%= render "destroyconf" %>
 <div class="py-4">
-  <%= link_to "Edit this gblab", edit_gblab_path(@gblab), class:"btn btn-primary px-2" %> 
-  <%= link_to "Back to gblabs", gblabs_path, class: "btn btn-secondary px-2 mx-2"%>
+  <%= link_to "Edit this elemood", edit_elemood_path(@elemood), class:"btn btn-primary px-2" %> 
+  <%= link_to "Back to elemoods", elemoods_path, class: "btn btn-secondary px-2 mx-2"%>
   <button type="button" class="btn btn-danger my-4" data-bs-toggle="modal" data-bs-target="#destroyConfirmationModal" >
-    Destroy this gblab
+    Destroy this elemood
   </button>
 </div>

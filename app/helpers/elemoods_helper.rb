@@ -1,0 +1,2 @@
+module ElemoodsHelper
+end

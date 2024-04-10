@@ -1,0 +1,2 @@
+class Elemood < ApplicationRecord
+end

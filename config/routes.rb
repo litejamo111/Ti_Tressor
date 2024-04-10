@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :elemoods
+  resources :cobes
   get 'home/index'
   root 'home#index'
   resources :gblabs

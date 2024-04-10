@@ -10,7 +10,55 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_04_05_194509) do
+ActiveRecord::Schema[7.1].define(version: 2024_04_09_200916) do
+  create_table "cobes", force: :cascade do |t|
+    t.string "nombre"
+    t.string "usuario"
+    t.string "correo"
+    t.string "bitrix24"
+    t.string "equipo"
+    t.string "tipo"
+    t.string "ubicacion"
+    t.string "procesador"
+    t.string "grafica"
+    t.string "memoria"
+    t.string "disco"
+    t.string "monitor"
+    t.string "mouse"
+    t.string "teclado"
+    t.string "diadema"
+    t.string "base_refrigerante"
+    t.string "celular"
+    t.string "otro_accesorio"
+    t.string "observaciones"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "elemoods", force: :cascade do |t|
+    t.string "nombre"
+    t.string "usuario"
+    t.string "correo"
+    t.string "bitrix24"
+    t.string "equipo"
+    t.string "tipo"
+    t.string "ubicacion"
+    t.string "procesador"
+    t.string "grafica"
+    t.string "memoria"
+    t.string "disco"
+    t.string "monitor"
+    t.string "mouse"
+    t.string "teclado"
+    t.string "diadema"
+    t.string "base_refrigerante"
+    t.string "celular"
+    t.string "otro_accesorio"
+    t.string "observaciones"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "gblabs", force: :cascade do |t|
     t.string "nombre"
     t.string "usuario"
